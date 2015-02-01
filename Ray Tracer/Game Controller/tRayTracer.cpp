@@ -67,7 +67,7 @@ tColor tRayTracer::traceRay( const tRay& ray, unsigned int depth )
 		}
 		else
 		{
-			returnVal = _scenePtr->background_color;
+			returnVal = _scenePtr->getBackgroundColor();
 		}
 	}
 

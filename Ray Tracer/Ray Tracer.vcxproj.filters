@@ -49,9 +49,6 @@
     <ClInclude Include="Game Controller\tShadeRecord.h">
       <Filter>Game Controller</Filter>
     </ClInclude>
-    <ClInclude Include="tViewPlane.h">
-      <Filter>Game Controller</Filter>
-    </ClInclude>
     <ClInclude Include="Game Controller\Maths.h">
       <Filter>Global Headers</Filter>
     </ClInclude>
@@ -130,9 +127,6 @@
       <Filter>Global Headers</Filter>
     </ClCompile>
     <ClCompile Include="Game Controller\tShadeRecord.cpp">
-      <Filter>Game Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="tViewPlane.cpp">
       <Filter>Game Controller</Filter>
     </ClCompile>
     <ClCompile Include="Game Controller\Maths.cpp">

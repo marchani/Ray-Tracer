@@ -6,18 +6,18 @@
 
 #include <gl/glut.h>
 #include <math.h>
-#include "../Lights/tAmbientLight.h"
 #include "tRay.h"
 #include "tRayTracer.h"
-#include "../Primitives/tPlane.h"
 #include "tShadeRecord.h"
-#include "../Primitives/tSphere.h"
-#include "../tViewPlane.h"
+#include "../Lights/tAmbientLight.h"
+#include "../Lights/tPointLight.h"
 #include "../Materials/tReflective.h"
 #include "../Materials/tPhong.h"
-#include "../Lights/tPointLight.h"
-#include "../Primitives/tTorus.h"
 #include "../Materials/tTransparent.h"
+#include "../Primitives/tPlane.h"
+#include "../Primitives/tPrimitive.h"
+#include "../Primitives/tSphere.h"
+#include "../Primitives/tTorus.h"
 
 static const float kHugeValue = std::numeric_limits<float>::max();
 
@@ -28,7 +28,6 @@ tScene* tScene::_instancePtr = NULL;
 //
 tScene::tScene()
 {
-	_viewPlanePtr = new tViewPlane();
 	_rayTracerPtr = new tRayTracer( this );
 }
 
@@ -73,11 +72,6 @@ void tScene::renderWrapper()
 //
 void tScene::build()
 {
-	_viewPlanePtr->setHorizontalImageResolution( 900 );
-	_viewPlanePtr->setVerticalImageResolution( 600 );
-	_viewPlanePtr->setPixelSize( 1.0 );
-	_viewPlanePtr->setGamma( 1.0 );
-
 	// Create the ambient light for the scene.
 	ambient_ptr = new tAmbientLight();
 	( ( tAmbientLight* )ambient_ptr )->set_color( tColor( 1.0f, 1.0f, 1.0f ) );
@@ -146,10 +140,10 @@ void tScene::render()
 	GLfloat aspectRatio = ( double )width / height;
 
 	// Setup the projection and model view matricies
-	glViewport( 0, 0, _viewPlanePtr->getHorizontalImageResolution(), _viewPlanePtr->getVerticalImageResolution() );
+	glViewport( 0, 0, width, height );
 	glMatrixMode( GL_PROJECTION );
 	glLoadIdentity();
-	glOrtho( 0, _viewPlanePtr->getHorizontalImageResolution(), 0, _viewPlanePtr->getVerticalImageResolution(), -1, 1 );
+	glOrtho( 0, width, 0, height, -1, 1 );
 
 	// Camera position from which the rays are cast.
 	tRay ray;

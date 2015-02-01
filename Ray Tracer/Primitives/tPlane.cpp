@@ -62,15 +62,7 @@ bool tPlane::hit( const tRay& ray, float& tmin, tShadeRecord& sr )
 //
 bool tPlane::shadow_hit( const tRay& ray, float& tmin )
 {
-	float t = tVector::dot( ( _position - ray.getOrigin() ), _normal ) / tVector::dot( ray.getDirection(), _normal );
+	tShadeRecord dummyValue;
 
-	if( t > 0.0001 /* kEpsilon*/ )
-	{
-		tmin = t;
-		return true;
-	}
-	else // distance > kEpsilon
-	{
-		return false;
-	}
+	return hit( ray, tmin, dummyValue );
 }

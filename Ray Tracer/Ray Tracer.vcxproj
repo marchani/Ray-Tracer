@@ -104,7 +104,6 @@
     <ClInclude Include="Primitives\tPrimitive.h" />
     <ClInclude Include="Primitives\tSphere.h" />
     <ClInclude Include="Primitives\tTorus.h" />
-    <ClInclude Include="tViewPlane.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BRDFs\tGlossySpecular.cpp" />
@@ -132,7 +131,6 @@
     <ClCompile Include="Primitives\tPrimitive.cpp" />
     <ClCompile Include="Primitives\tSphere.cpp" />
     <ClCompile Include="Primitives\tTorus.cpp" />
-    <ClCompile Include="tViewPlane.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

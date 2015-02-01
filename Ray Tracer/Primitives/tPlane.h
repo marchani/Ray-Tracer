@@ -5,10 +5,13 @@
 #ifndef ___TPLANE_H___
 #define ___TPLANE_H___
 
-#include "../Game Controller/tPoint.h"
 #include "tPrimitive.h"
+#include "../Game Controller/tPoint.h"
 
+class tMaterial;
+class tRay;
 class tShadeRecord;
+class tVector;
 
 //
 // tPlane

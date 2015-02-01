@@ -5,11 +5,9 @@
 #ifndef ___TPRIMITIVE_H___
 #define ___TPRIMITIVE_H___
 
-#include "../Game Controller/tColor.h"
-
 class tMaterial;
-class tShadeRecord;
 class tRay;
+class tShadeRecord;
 
 //
 // tPrimitive
@@ -26,9 +24,6 @@ class tPrimitive
 
 		// destructor()
 		~tPrimitive();
-
-		// get_color()
-		tColor get_color() const { return tColor( 1.0f, 1.0f, 0.0f ); }
 
 		// getMaterial()
 		tMaterial* getMaterial() const { return _material; }

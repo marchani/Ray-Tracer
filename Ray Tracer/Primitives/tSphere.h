@@ -5,11 +5,10 @@
 #ifndef ___TSPHERE_H___
 #define ___TSPHERE_H___
 
-#include "../Game Controller/tColor.h"
-#include "../Materials/tMaterial.h"
-#include "../Game Controller/tPoint.h"
 #include "tPrimitive.h"
+#include "../Game Controller/tPoint.h"
 
+class tMaterial;
 class tRay;
 class tShadeRecord;
 
@@ -37,8 +36,8 @@ class tSphere : public tPrimitive
 
 	private:
 
-		tPoint _position;
-		float _radius;
+		tPoint _position;  // Center of the sphere
+		float _radius;     // Radius of the sphere
 
 };
 

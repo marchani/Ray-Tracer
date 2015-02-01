@@ -16,8 +16,8 @@ tPrimitive::tPrimitive()
 // constructor()
 //
 tPrimitive::tPrimitive( tMaterial* material )
+: _material( material )
 {
-	_material = material;
 }
 
 

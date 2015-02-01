@@ -7,16 +7,13 @@
 
 #include <vector>
 #include "tColor.h"
+#include "tShadeRecord.h"
 
-class tPointLight;
 class tLight;
-class tPoint;
+class tPointLight;
 class tPrimitive;
-class tRay;
 class tRayTracer;
-class tShadeRecord;
-class tVector;
-class tViewPlane;
+class tRay;
 
 //
 // tScene
@@ -33,6 +30,15 @@ class tScene
 
 		// setInstancePtr()
 		void setInstancePtr( tScene* instancePtr );
+
+		// getRayTracerPtr()
+		tRayTracer* getRayTracerPtr() const { return _rayTracerPtr; }
+
+		// getBackgroundColor()
+		tColor getBackgroundColor() const { return background_color; }
+
+		// getAmbientLightPtr()
+		tLight* getAmbientLightPtr() const { return ambient_ptr; }
 
 		// getLights()
 		std::vector< tPointLight* > getLights() const { return _lights; }
@@ -58,26 +64,18 @@ class tScene
 		// max_to_one()
 		tColor max_to_one( const tColor& c ) const;
 
-		tColor background_color;
-
-		tLight* ambient_ptr;
-
-		// getRayTracerPtr()
-		tRayTracer* getRayTracerPtr() const { return _rayTracerPtr; }
-
 	protected:
 
 		static tScene* _instancePtr;
 
 	private:
 
-		tViewPlane* _viewPlanePtr;
-		tRayTracer* _rayTracerPtr;
+		tRayTracer* _rayTracerPtr;               // Pointer to the ray tracer.
+		tColor background_color;                 // Background color of the scene.
+		tLight* ambient_ptr;                     // Pointer to the ambient light in the scene.
 
-		tColor _ambientLight;
-
-		std::vector< tPrimitive* > _primitives;
-		std::vector< tPointLight* > _lights;
+		std::vector< tPrimitive* > _primitives;  // List of primitive objects in the scene.
+		std::vector< tPointLight* > _lights;     // List of light sources in the scene.
 
 };
 

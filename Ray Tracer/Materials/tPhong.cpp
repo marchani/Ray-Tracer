@@ -38,7 +38,7 @@ tPhong::~tPhong()
 tColor tPhong::shade( tShadeRecord& sr )
 {
 	tVector wo = -sr.ray.getDirection();
-	tColor L = ambient_brdf->rho( sr, wo ) * sr.getScenePtr()->ambient_ptr->L( sr );
+	tColor L = ambient_brdf->rho( sr, wo ) * sr.getScenePtr()->getAmbientLightPtr()->L( sr );
 	int numLights = sr.getScenePtr()->getLights().size();
 
 	for( int j = 0; j < numLights; j++ )
