@@ -4,12 +4,12 @@
 
 #include "tPhong.h"
 
-#include "../Game Controller/tLambertian.h"
+#include "../BRDFs/tLambertian.h"
 #include "../Game Controller/tShadeRecord.h"
 #include "../Game Controller/tScene.h"
-#include "../Game Controller/tPointLight.h"
-#include "../Game Controller/tLight.h"
-#include "../Game Controller/tGlossySpecular.h"
+#include "../Lights/tPointLight.h"
+#include "../Lights/tLight.h"
+#include "../BRDFs/tGlossySpecular.h"
 
 
 //

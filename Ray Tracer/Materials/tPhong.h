@@ -6,9 +6,9 @@
 #define ___TPHONG_H___
 
 #include "../Game Controller/tColor.h"
-#include "../Game Controller/tLambertian.h"
+#include "../BRDFs/tLambertian.h"
 #include "tMaterial.h"
-#include "../Game Controller/tGlossySpecular.h"
+#include "../BRDFs/tGlossySpecular.h"
 
 class tShadeRecord;
 

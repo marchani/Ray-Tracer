@@ -14,6 +14,8 @@ c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\tmaterial.
 c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\tphong.obj
 c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\treflective.obj
 c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\ttransparent.obj
+c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\tbbox.obj
+c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\tprimitive.obj
 c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\tviewplane.obj
 c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\maths.obj
 c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\tambientlight.obj
@@ -22,8 +24,15 @@ c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\tbtdf.obj
 c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\tcolor.obj
 c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\tperfecttransmitter.obj
 c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\tpointlight.obj
-c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\tprimitive.obj
-c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\tbbox.obj
+c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\tplane.obj
+c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\tsphere.obj
+c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\ttorus.obj
+c:\users\carlos\documents\my applications\ray tracer\debug\raytracer.ilk
+c:\users\carlos\documents\my applications\ray tracer\debug\raytracer.exe
+c:\users\carlos\documents\my applications\ray tracer\debug\raytracer.pdb
 c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\raytracer.tlog\cl.command.1.tlog
 c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\raytracer.tlog\cl.read.1.tlog
 c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\raytracer.tlog\cl.write.1.tlog
+c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\raytracer.tlog\link.command.1.tlog
+c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\raytracer.tlog\link.read.1.tlog
+c:\users\carlos\documents\my applications\ray tracer\ray tracer\debug\raytracer.tlog\link.write.1.tlog

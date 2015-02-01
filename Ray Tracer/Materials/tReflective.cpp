@@ -3,7 +3,7 @@
 //
 
 #include <stdio.h>
-#include "../Game Controller/tPerfectSpecular.h"
+#include "../BRDFs/tPerfectSpecular.h"
 #include "tPhong.h"
 #include "tReflective.h"
 #include "../Game Controller/tScene.h"

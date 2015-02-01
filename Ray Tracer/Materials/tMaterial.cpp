@@ -6,7 +6,7 @@
 
 #include "../Game Controller/tShadeRecord.h"
 #include "../Game Controller/tScene.h"
-#include "../Game Controller/tLight.h"
+#include "../Lights/tLight.h"
 
 
 //

@@ -6,7 +6,7 @@
 #define ___TREFLECTIVE_H___
 
 #include "tMaterial.h"
-#include "../Game Controller/tPerfectSpecular.h"
+#include "../BRDFs/tPerfectSpecular.h"
 #include "tPhong.h"
 
 //

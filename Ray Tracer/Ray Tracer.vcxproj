@@ -78,23 +78,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BRDFs\tBRDF.h" />
+    <ClInclude Include="BRDFs\tGlossySpecular.h" />
+    <ClInclude Include="BRDFs\tLambertian.h" />
+    <ClInclude Include="BRDFs\tPerfectSpecular.h" />
+    <ClInclude Include="BTDFs\tBTDF.h" />
+    <ClInclude Include="BTDFs\tPerfectTransmitter.h" />
     <ClInclude Include="Game Controller\Maths.h" />
-    <ClInclude Include="Game Controller\tAmbientLight.h" />
-    <ClInclude Include="Game Controller\tBRDF.h" />
-    <ClInclude Include="Game Controller\tBTDF.h" />
     <ClInclude Include="Game Controller\tColor.h" />
-    <ClInclude Include="Game Controller\tPerfectTransmitter.h" />
-    <ClInclude Include="Game Controller\tPointLight.h" />
-    <ClInclude Include="Game Controller\tGlossySpecular.h" />
-    <ClInclude Include="Game Controller\tLambertian.h" />
-    <ClInclude Include="Game Controller\tLight.h" />
-    <ClInclude Include="Game Controller\tPerfectSpecular.h" />
     <ClInclude Include="Game Controller\tPoint.h" />
     <ClInclude Include="Game Controller\tRay.h" />
     <ClInclude Include="Game Controller\tRayTracer.h" />
     <ClInclude Include="Game Controller\tScene.h" />
     <ClInclude Include="Game Controller\tShadeRecord.h" />
     <ClInclude Include="Game Controller\tVector.h" />
+    <ClInclude Include="Lights\tAmbientLight.h" />
+    <ClInclude Include="Lights\tLight.h" />
+    <ClInclude Include="Lights\tPointLight.h" />
     <ClInclude Include="Materials\tMaterial.h" />
     <ClInclude Include="Materials\tPhong.h" />
     <ClInclude Include="Materials\tReflective.h" />
@@ -107,23 +107,23 @@
     <ClInclude Include="tViewPlane.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BRDFs\tBRDF.cpp" />
+    <ClCompile Include="BRDFs\tGlossySpecular.cpp" />
+    <ClCompile Include="BRDFs\tLambertian.cpp" />
+    <ClCompile Include="BRDFs\tPerfectSpecular.cpp" />
+    <ClCompile Include="BTDFs\tBTDF.cpp" />
+    <ClCompile Include="BTDFs\tPerfectTransmitter.cpp" />
     <ClCompile Include="Game Controller\Maths.cpp" />
-    <ClCompile Include="Game Controller\tAmbientLight.cpp" />
-    <ClCompile Include="Game Controller\tBRDF.cpp" />
-    <ClCompile Include="Game Controller\tBTDF.cpp" />
     <ClCompile Include="Game Controller\tColor.cpp" />
-    <ClCompile Include="Game Controller\tPerfectTransmitter.cpp" />
-    <ClCompile Include="Game Controller\tPointLight.cpp" />
-    <ClCompile Include="Game Controller\tGlossySpecular.cpp" />
-    <ClCompile Include="Game Controller\tLambertian.cpp" />
-    <ClCompile Include="Game Controller\tLight.cpp" />
-    <ClCompile Include="Game Controller\tPerfectSpecular.cpp" />
     <ClCompile Include="Game Controller\tPoint.cpp" />
     <ClCompile Include="Game Controller\tRay.cpp" />
     <ClCompile Include="Game Controller\tRayTracer.cpp" />
     <ClCompile Include="Game Controller\tScene.cpp" />
     <ClCompile Include="Game Controller\tShadeRecord.cpp" />
     <ClCompile Include="Game Controller\tVector.cpp" />
+    <ClCompile Include="Lights\tAmbientLight.cpp" />
+    <ClCompile Include="Lights\tLight.cpp" />
+    <ClCompile Include="Lights\tPointLight.cpp" />
     <ClCompile Include="Materials\tMaterial.cpp" />
     <ClCompile Include="Materials\tPhong.cpp" />
     <ClCompile Include="Materials\tReflective.cpp" />

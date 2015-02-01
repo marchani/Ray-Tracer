@@ -6,7 +6,7 @@
 
 #include <gl/glut.h>
 #include <math.h>
-#include "tAmbientLight.h"
+#include "../Lights/tAmbientLight.h"
 #include "tRay.h"
 #include "tRayTracer.h"
 #include "../Primitives/tPlane.h"
@@ -15,7 +15,7 @@
 #include "../tViewPlane.h"
 #include "../Materials/tReflective.h"
 #include "../Materials/tPhong.h"
-#include "tPointLight.h"
+#include "../Lights/tPointLight.h"
 #include "../Primitives/tTorus.h"
 #include "../Materials/tTransparent.h"
 

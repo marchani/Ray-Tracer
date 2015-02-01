@@ -52,35 +52,8 @@
     <ClInclude Include="tViewPlane.h">
       <Filter>Game Controller</Filter>
     </ClInclude>
-    <ClInclude Include="Game Controller\tLambertian.h">
-      <Filter>BRDFs</Filter>
-    </ClInclude>
-    <ClInclude Include="Game Controller\tGlossySpecular.h">
-      <Filter>BRDFs</Filter>
-    </ClInclude>
-    <ClInclude Include="Game Controller\tBRDF.h">
-      <Filter>BRDFs</Filter>
-    </ClInclude>
-    <ClInclude Include="Game Controller\tPerfectSpecular.h">
-      <Filter>BRDFs</Filter>
-    </ClInclude>
-    <ClInclude Include="Game Controller\tAmbientLight.h">
-      <Filter>Lights</Filter>
-    </ClInclude>
-    <ClInclude Include="Game Controller\tLight.h">
-      <Filter>Lights</Filter>
-    </ClInclude>
-    <ClInclude Include="Game Controller\tPointLight.h">
-      <Filter>Lights</Filter>
-    </ClInclude>
     <ClInclude Include="Game Controller\Maths.h">
       <Filter>Global Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Game Controller\tBTDF.h">
-      <Filter>BTDFs</Filter>
-    </ClInclude>
-    <ClInclude Include="Game Controller\tPerfectTransmitter.h">
-      <Filter>BTDFs</Filter>
     </ClInclude>
     <ClInclude Include="Materials\tMaterial.h">
       <Filter>Materials</Filter>
@@ -109,6 +82,33 @@
     <ClInclude Include="Primitives\tTorus.h">
       <Filter>Primitives</Filter>
     </ClInclude>
+    <ClInclude Include="Lights\tAmbientLight.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Lights\tLight.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Lights\tPointLight.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="BRDFs\tBRDF.h">
+      <Filter>BRDFs</Filter>
+    </ClInclude>
+    <ClInclude Include="BRDFs\tGlossySpecular.h">
+      <Filter>BRDFs</Filter>
+    </ClInclude>
+    <ClInclude Include="BRDFs\tLambertian.h">
+      <Filter>BRDFs</Filter>
+    </ClInclude>
+    <ClInclude Include="BRDFs\tPerfectSpecular.h">
+      <Filter>BRDFs</Filter>
+    </ClInclude>
+    <ClInclude Include="BTDFs\tBTDF.h">
+      <Filter>BTDFs</Filter>
+    </ClInclude>
+    <ClInclude Include="BTDFs\tPerfectTransmitter.h">
+      <Filter>BTDFs</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game Controller\tRayTracer.cpp">
@@ -135,35 +135,8 @@
     <ClCompile Include="tViewPlane.cpp">
       <Filter>Game Controller</Filter>
     </ClCompile>
-    <ClCompile Include="Game Controller\tGlossySpecular.cpp">
-      <Filter>BRDFs</Filter>
-    </ClCompile>
-    <ClCompile Include="Game Controller\tLambertian.cpp">
-      <Filter>BRDFs</Filter>
-    </ClCompile>
-    <ClCompile Include="Game Controller\tBRDF.cpp">
-      <Filter>BRDFs</Filter>
-    </ClCompile>
-    <ClCompile Include="Game Controller\tPerfectSpecular.cpp">
-      <Filter>BRDFs</Filter>
-    </ClCompile>
-    <ClCompile Include="Game Controller\tAmbientLight.cpp">
-      <Filter>Lights</Filter>
-    </ClCompile>
-    <ClCompile Include="Game Controller\tLight.cpp">
-      <Filter>Lights</Filter>
-    </ClCompile>
-    <ClCompile Include="Game Controller\tPointLight.cpp">
-      <Filter>Lights</Filter>
-    </ClCompile>
     <ClCompile Include="Game Controller\Maths.cpp">
       <Filter>Global Headers</Filter>
-    </ClCompile>
-    <ClCompile Include="Game Controller\tPerfectTransmitter.cpp">
-      <Filter>BTDFs</Filter>
-    </ClCompile>
-    <ClCompile Include="Game Controller\tBTDF.cpp">
-      <Filter>BTDFs</Filter>
     </ClCompile>
     <ClCompile Include="Materials\tMaterial.cpp">
       <Filter>Materials</Filter>
@@ -191,6 +164,33 @@
     </ClCompile>
     <ClCompile Include="Primitives\tTorus.cpp">
       <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Lights\tAmbientLight.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Lights\tLight.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Lights\tPointLight.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="BRDFs\tBRDF.cpp">
+      <Filter>BRDFs</Filter>
+    </ClCompile>
+    <ClCompile Include="BRDFs\tGlossySpecular.cpp">
+      <Filter>BRDFs</Filter>
+    </ClCompile>
+    <ClCompile Include="BRDFs\tLambertian.cpp">
+      <Filter>BRDFs</Filter>
+    </ClCompile>
+    <ClCompile Include="BRDFs\tPerfectSpecular.cpp">
+      <Filter>BRDFs</Filter>
+    </ClCompile>
+    <ClCompile Include="BTDFs\tBTDF.cpp">
+      <Filter>BTDFs</Filter>
+    </ClCompile>
+    <ClCompile Include="BTDFs\tPerfectTransmitter.cpp">
+      <Filter>BTDFs</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -5,8 +5,8 @@
 #ifndef ___TTRANSPARENT_H___
 #define ___TTRANSPARENT_H___
 
-#include "../Game Controller/tPerfectSpecular.h"
-#include "../Game Controller/tPerfectTransmitter.h"
+#include "../BRDFs/tPerfectSpecular.h"
+#include "../BTDFs/tPerfectTransmitter.h"
 #include "tPhong.h"
 
 //

@@ -1,26 +1,26 @@
-﻿Build started 2/1/2015 11:27:35 AM.
+﻿Build started 2/1/2015 11:48:19 AM.
      1>Project "C:\Users\Carlos\Documents\My Applications\Ray Tracer\Ray Tracer\Ray Tracer.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D GLUT_BUILDING_LIB /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Primitives\tPlane.cpp
-         tPlane.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D GLUT_BUILDING_LIB /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt BTDFs\tPerfectTransmitter.cpp
+         tPerfectTransmitter.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Carlos\Documents\My Applications\Ray Tracer\Debug\RayTracer.exe" /INCREMENTAL /NOLOGO opengl32.lib glut32.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Carlos\Documents\My Applications\Ray Tracer\Debug\RayTracer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Carlos\Documents\My Applications\Ray Tracer\Debug\RayTracer.lib" /MACHINE:X86 Debug\Maths.obj
-         Debug\tAmbientLight.obj
-         Debug\tBRDF.obj
-         Debug\tBTDF.obj
-         Debug\tColor.obj
-         Debug\tPerfectTransmitter.obj
-         Debug\tPointLight.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Carlos\Documents\My Applications\Ray Tracer\Debug\RayTracer.exe" /INCREMENTAL /NOLOGO opengl32.lib glut32.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Carlos\Documents\My Applications\Ray Tracer\Debug\RayTracer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Carlos\Documents\My Applications\Ray Tracer\Debug\RayTracer.lib" /MACHINE:X86 Debug\tBRDF.obj
          Debug\tGlossySpecular.obj
          Debug\tLambertian.obj
-         Debug\tLight.obj
          Debug\tPerfectSpecular.obj
+         Debug\tBTDF.obj
+         Debug\tPerfectTransmitter.obj
+         Debug\Maths.obj
+         Debug\tColor.obj
          Debug\tPoint.obj
          Debug\tRay.obj
          Debug\tRayTracer.obj
          Debug\tScene.obj
          Debug\tShadeRecord.obj
          Debug\tVector.obj
+         Debug\tAmbientLight.obj
+         Debug\tLight.obj
+         Debug\tPointLight.obj
          Debug\tMaterial.obj
          Debug\tPhong.obj
          Debug\tReflective.obj
