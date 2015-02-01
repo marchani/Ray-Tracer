@@ -6,12 +6,12 @@
 
 #include <gl/glut.h>
 #include <stdio.h>
-#include "tMaterial.h"
+#include "../Materials/tMaterial.h"
 #include "tRay.h"
 #include "tScene.h"
 #include "tShadeRecord.h"
 #include "tVector.h"
-#include "tSphere.h"
+#include "../Primitives/tSphere.h"
 
 static const int kMaxTraceDepth = 2;
 

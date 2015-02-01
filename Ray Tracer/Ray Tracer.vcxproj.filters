@@ -52,12 +52,6 @@
     <ClInclude Include="tViewPlane.h">
       <Filter>Game Controller</Filter>
     </ClInclude>
-    <ClInclude Include="Game Controller\tMaterial.h">
-      <Filter>Materials</Filter>
-    </ClInclude>
-    <ClInclude Include="Game Controller\tReflective.h">
-      <Filter>Materials</Filter>
-    </ClInclude>
     <ClInclude Include="Game Controller\tLambertian.h">
       <Filter>BRDFs</Filter>
     </ClInclude>
@@ -70,9 +64,6 @@
     <ClInclude Include="Game Controller\tPerfectSpecular.h">
       <Filter>BRDFs</Filter>
     </ClInclude>
-    <ClInclude Include="Game Controller\tPhong.h">
-      <Filter>Materials</Filter>
-    </ClInclude>
     <ClInclude Include="Game Controller\tAmbientLight.h">
       <Filter>Lights</Filter>
     </ClInclude>
@@ -81,21 +72,6 @@
     </ClInclude>
     <ClInclude Include="Game Controller\tPointLight.h">
       <Filter>Lights</Filter>
-    </ClInclude>
-    <ClInclude Include="Game Controller\tPrimitive.h">
-      <Filter>Primitives</Filter>
-    </ClInclude>
-    <ClInclude Include="Game Controller\tPlane.h">
-      <Filter>Primitives</Filter>
-    </ClInclude>
-    <ClInclude Include="Game Controller\tSphere.h">
-      <Filter>Primitives</Filter>
-    </ClInclude>
-    <ClInclude Include="Game Controller\tTorus.h">
-      <Filter>Primitives</Filter>
-    </ClInclude>
-    <ClInclude Include="Game Controller\tBBox.h">
-      <Filter>Primitives</Filter>
     </ClInclude>
     <ClInclude Include="Game Controller\Maths.h">
       <Filter>Global Headers</Filter>
@@ -106,8 +82,32 @@
     <ClInclude Include="Game Controller\tPerfectTransmitter.h">
       <Filter>BTDFs</Filter>
     </ClInclude>
-    <ClInclude Include="Game Controller\tTransparent.h">
+    <ClInclude Include="Materials\tMaterial.h">
       <Filter>Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Materials\tPhong.h">
+      <Filter>Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Materials\tReflective.h">
+      <Filter>Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Materials\tTransparent.h">
+      <Filter>Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\tBBox.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\tPlane.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\tPrimitive.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\tSphere.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\tTorus.h">
+      <Filter>Primitives</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -135,9 +135,6 @@
     <ClCompile Include="tViewPlane.cpp">
       <Filter>Game Controller</Filter>
     </ClCompile>
-    <ClCompile Include="Game Controller\tMaterial.cpp">
-      <Filter>Materials</Filter>
-    </ClCompile>
     <ClCompile Include="Game Controller\tGlossySpecular.cpp">
       <Filter>BRDFs</Filter>
     </ClCompile>
@@ -150,12 +147,6 @@
     <ClCompile Include="Game Controller\tPerfectSpecular.cpp">
       <Filter>BRDFs</Filter>
     </ClCompile>
-    <ClCompile Include="Game Controller\tReflective.cpp">
-      <Filter>Materials</Filter>
-    </ClCompile>
-    <ClCompile Include="Game Controller\tPhong.cpp">
-      <Filter>Materials</Filter>
-    </ClCompile>
     <ClCompile Include="Game Controller\tAmbientLight.cpp">
       <Filter>Lights</Filter>
     </ClCompile>
@@ -165,32 +156,41 @@
     <ClCompile Include="Game Controller\tPointLight.cpp">
       <Filter>Lights</Filter>
     </ClCompile>
-    <ClCompile Include="Game Controller\tPlane.cpp">
-      <Filter>Primitives</Filter>
-    </ClCompile>
-    <ClCompile Include="Game Controller\tPrimitive.cpp">
-      <Filter>Primitives</Filter>
-    </ClCompile>
-    <ClCompile Include="Game Controller\tSphere.cpp">
-      <Filter>Primitives</Filter>
-    </ClCompile>
-    <ClCompile Include="Game Controller\tTorus.cpp">
-      <Filter>Primitives</Filter>
-    </ClCompile>
-    <ClCompile Include="Game Controller\tBBox.cpp">
-      <Filter>Primitives</Filter>
-    </ClCompile>
     <ClCompile Include="Game Controller\Maths.cpp">
       <Filter>Global Headers</Filter>
     </ClCompile>
     <ClCompile Include="Game Controller\tPerfectTransmitter.cpp">
       <Filter>BTDFs</Filter>
     </ClCompile>
-    <ClCompile Include="Game Controller\tTransparent.cpp">
-      <Filter>Materials</Filter>
-    </ClCompile>
     <ClCompile Include="Game Controller\tBTDF.cpp">
       <Filter>BTDFs</Filter>
+    </ClCompile>
+    <ClCompile Include="Materials\tMaterial.cpp">
+      <Filter>Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="Materials\tPhong.cpp">
+      <Filter>Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="Materials\tReflective.cpp">
+      <Filter>Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="Materials\tTransparent.cpp">
+      <Filter>Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\tBBox.cpp">
+      <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\tPlane.cpp">
+      <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\tPrimitive.cpp">
+      <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\tSphere.cpp">
+      <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\tTorus.cpp">
+      <Filter>Primitives</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

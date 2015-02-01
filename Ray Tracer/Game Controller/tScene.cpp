@@ -9,15 +9,15 @@
 #include "tAmbientLight.h"
 #include "tRay.h"
 #include "tRayTracer.h"
-#include "tPlane.h"
+#include "../Primitives/tPlane.h"
 #include "tShadeRecord.h"
-#include "tSphere.h"
+#include "../Primitives/tSphere.h"
 #include "../tViewPlane.h"
-#include "tReflective.h"
-#include "tPhong.h"
+#include "../Materials/tReflective.h"
+#include "../Materials/tPhong.h"
 #include "tPointLight.h"
-#include "tTorus.h"
-#include "tTransparent.h"
+#include "../Primitives/tTorus.h"
+#include "../Materials/tTransparent.h"
 
 static const float kHugeValue = std::numeric_limits<float>::max();
 

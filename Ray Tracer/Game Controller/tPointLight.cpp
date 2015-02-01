@@ -3,7 +3,7 @@
 //
 
 #include "tPointLight.h"
-#include "tPrimitive.h"
+#include "../Primitives/tPrimitive.h"
 
 //
 // constructor()

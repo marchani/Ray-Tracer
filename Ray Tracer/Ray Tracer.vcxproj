@@ -80,7 +80,6 @@
   <ItemGroup>
     <ClInclude Include="Game Controller\Maths.h" />
     <ClInclude Include="Game Controller\tAmbientLight.h" />
-    <ClInclude Include="Game Controller\tBBox.h" />
     <ClInclude Include="Game Controller\tBRDF.h" />
     <ClInclude Include="Game Controller\tBTDF.h" />
     <ClInclude Include="Game Controller\tColor.h" />
@@ -89,27 +88,27 @@
     <ClInclude Include="Game Controller\tGlossySpecular.h" />
     <ClInclude Include="Game Controller\tLambertian.h" />
     <ClInclude Include="Game Controller\tLight.h" />
-    <ClInclude Include="Game Controller\tMaterial.h" />
     <ClInclude Include="Game Controller\tPerfectSpecular.h" />
-    <ClInclude Include="Game Controller\tPhong.h" />
-    <ClInclude Include="Game Controller\tPlane.h" />
     <ClInclude Include="Game Controller\tPoint.h" />
-    <ClInclude Include="Game Controller\tPrimitive.h" />
     <ClInclude Include="Game Controller\tRay.h" />
     <ClInclude Include="Game Controller\tRayTracer.h" />
-    <ClInclude Include="Game Controller\tReflective.h" />
     <ClInclude Include="Game Controller\tScene.h" />
     <ClInclude Include="Game Controller\tShadeRecord.h" />
-    <ClInclude Include="Game Controller\tSphere.h" />
-    <ClInclude Include="Game Controller\tTorus.h" />
-    <ClInclude Include="Game Controller\tTransparent.h" />
     <ClInclude Include="Game Controller\tVector.h" />
+    <ClInclude Include="Materials\tMaterial.h" />
+    <ClInclude Include="Materials\tPhong.h" />
+    <ClInclude Include="Materials\tReflective.h" />
+    <ClInclude Include="Materials\tTransparent.h" />
+    <ClInclude Include="Primitives\tBBox.h" />
+    <ClInclude Include="Primitives\tPlane.h" />
+    <ClInclude Include="Primitives\tPrimitive.h" />
+    <ClInclude Include="Primitives\tSphere.h" />
+    <ClInclude Include="Primitives\tTorus.h" />
     <ClInclude Include="tViewPlane.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game Controller\Maths.cpp" />
     <ClCompile Include="Game Controller\tAmbientLight.cpp" />
-    <ClCompile Include="Game Controller\tBBox.cpp" />
     <ClCompile Include="Game Controller\tBRDF.cpp" />
     <ClCompile Include="Game Controller\tBTDF.cpp" />
     <ClCompile Include="Game Controller\tColor.cpp" />
@@ -118,21 +117,22 @@
     <ClCompile Include="Game Controller\tGlossySpecular.cpp" />
     <ClCompile Include="Game Controller\tLambertian.cpp" />
     <ClCompile Include="Game Controller\tLight.cpp" />
-    <ClCompile Include="Game Controller\tMaterial.cpp" />
     <ClCompile Include="Game Controller\tPerfectSpecular.cpp" />
-    <ClCompile Include="Game Controller\tPhong.cpp" />
-    <ClCompile Include="Game Controller\tPlane.cpp" />
     <ClCompile Include="Game Controller\tPoint.cpp" />
-    <ClCompile Include="Game Controller\tPrimitive.cpp" />
     <ClCompile Include="Game Controller\tRay.cpp" />
     <ClCompile Include="Game Controller\tRayTracer.cpp" />
-    <ClCompile Include="Game Controller\tReflective.cpp" />
     <ClCompile Include="Game Controller\tScene.cpp" />
     <ClCompile Include="Game Controller\tShadeRecord.cpp" />
-    <ClCompile Include="Game Controller\tSphere.cpp" />
-    <ClCompile Include="Game Controller\tTorus.cpp" />
-    <ClCompile Include="Game Controller\tTransparent.cpp" />
     <ClCompile Include="Game Controller\tVector.cpp" />
+    <ClCompile Include="Materials\tMaterial.cpp" />
+    <ClCompile Include="Materials\tPhong.cpp" />
+    <ClCompile Include="Materials\tReflective.cpp" />
+    <ClCompile Include="Materials\tTransparent.cpp" />
+    <ClCompile Include="Primitives\tBBox.cpp" />
+    <ClCompile Include="Primitives\tPlane.cpp" />
+    <ClCompile Include="Primitives\tPrimitive.cpp" />
+    <ClCompile Include="Primitives\tSphere.cpp" />
+    <ClCompile Include="Primitives\tTorus.cpp" />
     <ClCompile Include="tViewPlane.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
