@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{07E66469-9807-42E8-ADE9-EE3A2DD9318B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Pong</RootNamespace>
+    <ProjectName>RayTracer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);GLUT_BUILDING_LIB</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glut32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Game Controller\Maths.h" />
+    <ClInclude Include="Game Controller\tAmbientLight.h" />
+    <ClInclude Include="Game Controller\tBBox.h" />
+    <ClInclude Include="Game Controller\tBRDF.h" />
+    <ClInclude Include="Game Controller\tBTDF.h" />
+    <ClInclude Include="Game Controller\tColor.h" />
+    <ClInclude Include="Game Controller\tPerfectTransmitter.h" />
+    <ClInclude Include="Game Controller\tPointLight.h" />
+    <ClInclude Include="Game Controller\tGlossySpecular.h" />
+    <ClInclude Include="Game Controller\tLambertian.h" />
+    <ClInclude Include="Game Controller\tLight.h" />
+    <ClInclude Include="Game Controller\tMaterial.h" />
+    <ClInclude Include="Game Controller\tPerfectSpecular.h" />
+    <ClInclude Include="Game Controller\tPhong.h" />
+    <ClInclude Include="Game Controller\tPlane.h" />
+    <ClInclude Include="Game Controller\tPoint.h" />
+    <ClInclude Include="Game Controller\tPrimitive.h" />
+    <ClInclude Include="Game Controller\tRay.h" />
+    <ClInclude Include="Game Controller\tRayTracer.h" />
+    <ClInclude Include="Game Controller\tReflective.h" />
+    <ClInclude Include="Game Controller\tScene.h" />
+    <ClInclude Include="Game Controller\tShadeRecord.h" />
+    <ClInclude Include="Game Controller\tSphere.h" />
+    <ClInclude Include="Game Controller\tTorus.h" />
+    <ClInclude Include="Game Controller\tTransparent.h" />
+    <ClInclude Include="Game Controller\tVector.h" />
+    <ClInclude Include="tViewPlane.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game Controller\Maths.cpp" />
+    <ClCompile Include="Game Controller\tAmbientLight.cpp" />
+    <ClCompile Include="Game Controller\tBBox.cpp" />
+    <ClCompile Include="Game Controller\tBRDF.cpp" />
+    <ClCompile Include="Game Controller\tBTDF.cpp" />
+    <ClCompile Include="Game Controller\tColor.cpp" />
+    <ClCompile Include="Game Controller\tPerfectTransmitter.cpp" />
+    <ClCompile Include="Game Controller\tPointLight.cpp" />
+    <ClCompile Include="Game Controller\tGlossySpecular.cpp" />
+    <ClCompile Include="Game Controller\tLambertian.cpp" />
+    <ClCompile Include="Game Controller\tLight.cpp" />
+    <ClCompile Include="Game Controller\tMaterial.cpp" />
+    <ClCompile Include="Game Controller\tPerfectSpecular.cpp" />
+    <ClCompile Include="Game Controller\tPhong.cpp" />
+    <ClCompile Include="Game Controller\tPlane.cpp" />
+    <ClCompile Include="Game Controller\tPoint.cpp" />
+    <ClCompile Include="Game Controller\tPrimitive.cpp" />
+    <ClCompile Include="Game Controller\tRay.cpp" />
+    <ClCompile Include="Game Controller\tRayTracer.cpp" />
+    <ClCompile Include="Game Controller\tReflective.cpp" />
+    <ClCompile Include="Game Controller\tScene.cpp" />
+    <ClCompile Include="Game Controller\tShadeRecord.cpp" />
+    <ClCompile Include="Game Controller\tSphere.cpp" />
+    <ClCompile Include="Game Controller\tTorus.cpp" />
+    <ClCompile Include="Game Controller\tTransparent.cpp" />
+    <ClCompile Include="Game Controller\tVector.cpp" />
+    <ClCompile Include="tViewPlane.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
