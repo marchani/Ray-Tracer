@@ -107,7 +107,6 @@
     <ClInclude Include="tViewPlane.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BRDFs\tBRDF.cpp" />
     <ClCompile Include="BRDFs\tGlossySpecular.cpp" />
     <ClCompile Include="BRDFs\tLambertian.cpp" />
     <ClCompile Include="BRDFs\tPerfectSpecular.cpp" />

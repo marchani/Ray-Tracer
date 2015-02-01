@@ -7,6 +7,9 @@
 
 #include "tBRDF.h"
 
+//
+// tLambertian
+//
 class tLambertian: public tBRDF
 {
 	public:
@@ -14,89 +17,29 @@ class tLambertian: public tBRDF
 		// constructor()
 		tLambertian();
 		
-		// constructor()
-		tLambertian( const tLambertian& lamb );
-		
-		tLambertian& operator= (const tLambertian& rhs);
-		
+		// destructor()
 		virtual ~tLambertian();
+
+		// set_ka()
+		void set_ka( const float ka ) { kd = ka; }
+				
+		// set_kd()
+		void set_kd(const float _kd) { kd = _kd; }
 		
-		virtual tLambertian* clone(void) const;
-		
-		virtual tColor f(const tShadeRecord& sr, const tVector& wo, const tVector& wi) const;
-		
-		//virtual tColor sample_f(const tShadeRecord& sr, const tVector& wo, tVector& wi, float& pdf) const;
+		// set_cd()
+		void set_cd( const tColor& c ) { cd = c; };
+
+		// f()
+		virtual tColor f( const tShadeRecord& sr, const tVector& wo, tVector& wi ) const;
 		
 		// rho()
 		virtual tColor rho( const tShadeRecord& sr, const tVector& wo ) const;
-
-		// set_ka()
-		void set_ka( const float ka );	
-				
-		// set_kd()
-		void set_kd( const float kd );
-		
-		// set_cd()
-		void set_cd( const tColor& c );
-		
-		// set_cd()
-		void set_cd( const float r, const float g, const float b );
-		
-		// set_cd()
-		void set_cd(const float c);
 					
 	private:
 	
-		float		kd;
-		tColor 		cd;
+		float kd;
+		tColor cd;
+
 };
-
-
-
-
-// -------------------------------------------------------------- set_ka
-
-inline void
-tLambertian::set_ka(const float k) {
-	kd = k;
-}
-
-
-
-// -------------------------------------------------------------- set_kd
-
-inline void
-tLambertian::set_kd(const float k) {
-	kd = k;
-}
-
-
-// -------------------------------------------------------------- set_cd
-
-inline void
-tLambertian::set_cd(const tColor& c) {
-	cd = c;
-}
-
-
-// ---------------------------------------------------------------- set_cd
-
-inline void													
-tLambertian::set_cd(const float r, const float g, const float b) {
-	cd.setRed( r );
-	cd.setGreen( g );
-	cd.setBlue( b );
-}
-
-
-// ---------------------------------------------------------------- set_cd
-
-inline void													
-tLambertian::set_cd(const float c)
-{
-	cd.setRed( c );
-	cd.setGreen( c );
-	cd.setBlue( c );
-}
 
 #endif

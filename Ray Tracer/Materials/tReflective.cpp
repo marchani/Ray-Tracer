@@ -2,12 +2,15 @@
 // tReflective.cpp
 //
 
-#include <stdio.h>
-#include "../BRDFs/tPerfectSpecular.h"
-#include "tPhong.h"
 #include "tReflective.h"
+
+#include <stdio.h>
+#include "tPhong.h"
+#include "../BRDFs/tPerfectSpecular.h"
 #include "../Game Controller/tScene.h"
 #include "../Game Controller/tRayTracer.h"
+#include "../Game Controller/tShadeRecord.h"
+
 
 //
 // constructor()
@@ -41,7 +44,7 @@ tColor tReflective::shade( tShadeRecord& sr )
 	
 	tVector wo = -sr.ray.getDirection();
 	tVector wi;	
-	tColor fr = reflective_brdf->sample_f( sr, wo, wi ); 
+	tColor fr = reflective_brdf->f( sr, wo, wi ); 
 	tRay reflected_ray( sr.local_hit_point + wi, wi ); 
 
 	L += ( fr * ( sr.getScenePtr()->getRayTracerPtr()->traceRay( reflected_ray, sr.depth + 1 ) ) * tVector::dot( sr.normal, wi ) );

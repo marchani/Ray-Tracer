@@ -174,9 +174,6 @@
     <ClCompile Include="Lights\tPointLight.cpp">
       <Filter>Lights</Filter>
     </ClCompile>
-    <ClCompile Include="BRDFs\tBRDF.cpp">
-      <Filter>BRDFs</Filter>
-    </ClCompile>
     <ClCompile Include="BRDFs\tGlossySpecular.cpp">
       <Filter>BRDFs</Filter>
     </ClCompile>

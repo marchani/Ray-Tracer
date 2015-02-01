@@ -30,12 +30,6 @@ class tReflective: public tPhong
 		// set_cr()
 		void set_cr( const tColor& c ) { reflective_brdf->set_cr( c ); };
 		
-		// set_cr()
-		void set_cr( const float r, const float g, const float b ) { reflective_brdf->set_cr( r, g, b ); }
-		
-		// set_cr()
-		void set_cr( const float c ) {	reflective_brdf->set_cr( c ); }
-		
 		// shade()
 		tColor shade( tShadeRecord& s );
 		

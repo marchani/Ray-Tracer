@@ -41,7 +41,7 @@ tColor tTransparent::shade( tShadeRecord& sr )
 	
 	tVector wo = -sr.ray.getDirection();
 	tVector wi;
-	tColor fr = reflective_brdf->sample_f( sr, wo, wi ); 
+	tColor fr = reflective_brdf->f( sr, wo, wi ); 
 	tRay reflected_ray( sr.local_hit_point + wi, wi ); 
 
 	if( specular_btdf->tir( sr ) )

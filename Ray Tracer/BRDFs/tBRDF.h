@@ -6,10 +6,9 @@
 #define ___TBRDF_H___
 
 #include "../Game Controller/tColor.h"
-#include "../Game Controller/tVector.h"
-#include "../Game Controller/tShadeRecord.h"
 
-class tSampler;
+class tShadeRecord;
+class tVector;
 
 //
 // tBDRF
@@ -18,27 +17,12 @@ class tBRDF
 {
 	public:
 	
-		// constructor()
-		tBRDF();
+		// f()
+		virtual tColor f( const tShadeRecord& shadeRecordRef, const tVector& wo, tVector& wi ) const = 0;
+		
+		// rho()
+		virtual tColor rho( const tShadeRecord& shadeRecordRef, const tVector& wo ) const = 0;
 
-		// destructor
-		virtual ~tBRDF();
-
-		// set_sampler()
-		//void set_sampler(Sampler* sPtr);
-		
-		virtual tColor f( const tShadeRecord& sr, const tVector& wo, const tVector& wi ) const;
-		
-		virtual tColor sample_f( const tShadeRecord& sr, const tVector& wo, tVector& wi ) const;
-		
-		virtual tColor sample_f( const tShadeRecord& sr, const tVector& wo, tVector& wi, float& pdf ) const;
-		
-		virtual tColor rho( const tShadeRecord& sr, const tVector& wo ) const;
-		
-			
-	protected:
-	
-		tSampler* sampler_ptr;		// for indirect illumination
 };
 
 #endif
