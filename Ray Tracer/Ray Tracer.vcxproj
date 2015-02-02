@@ -78,7 +78,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="BRDFs\tBRDF.h" />
+    <ClInclude Include="BRDFs\iBRDF.h" />
     <ClInclude Include="BRDFs\tGlossySpecular.h" />
     <ClInclude Include="BRDFs\tLambertian.h" />
     <ClInclude Include="BRDFs\tPerfectSpecular.h" />

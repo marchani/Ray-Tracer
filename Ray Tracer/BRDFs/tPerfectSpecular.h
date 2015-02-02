@@ -5,12 +5,12 @@
 #ifndef ___TPERFECTSPECULAR_H___
 #define ___TPERFECTSPECULAR_H___
 
-#include "tBRDF.h"
+#include "iBRDF.h"
 
 //
 // tPerfectSpecular
 //
-class tPerfectSpecular: public tBRDF
+class tPerfectSpecular: public iBRDF
 {
 	public:
 	

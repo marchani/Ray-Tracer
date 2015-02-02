@@ -12,8 +12,7 @@
 // constructor()
 //
 tPerfectSpecular::tPerfectSpecular()
-: tBRDF(),
-  kr( 0.0 ),
+: kr( 0.0 ),
   cr( 1.0, 1.0, 1.0 )
 {
 }

@@ -5,12 +5,12 @@
 #ifndef ___TGLOSSYSPECULAR_H___
 #define ___TGLOSSYSPECULAR_H___
 
-#include "tBRDF.h"
+#include "iBRDF.h"
 
 //
 // tGlossySpecular
 //
-class tGlossySpecular: public tBRDF
+class tGlossySpecular: public iBRDF
 {
 	public:
 	

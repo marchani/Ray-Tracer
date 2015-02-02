@@ -9,8 +9,7 @@
 // constructor()
 //
 tLambertian::tLambertian()
-: tBRDF(),
-  kd( 0.0 ), 
+: kd( 0.0 ), 
   cd( 0.0, 0.0, 0.0 )
 {
 }

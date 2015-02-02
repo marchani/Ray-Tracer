@@ -5,12 +5,12 @@
 #ifndef ___TLAMBERTIAN_H___
 #define ___TLAMBERTIAN_H___
 
-#include "tBRDF.h"
+#include "iBRDF.h"
 
 //
 // tLambertian
 //
-class tLambertian: public tBRDF
+class tLambertian: public iBRDF
 {
 	public:
 	
